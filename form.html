@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        form {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],y
+        input[type="number"],
+        select,
+        textarea {
+            width: 90%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: blue;
+        }
+    </style>
+    <h1>Student Registration Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text"  name="name" placeholder="Enter Yout Name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label for="password">password:</label>
+        <input type="password" name="password" placeholder="Enter Your Password" show password>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" min="1" max="100">
+        <br><br>
+
+        <label for="marks">Marks:</label>
+        <input type="number" name="marks" min="0" max="100">
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Other">Other
+        <br><br>
+
+        <label for="course">course:</label>
+        <input type="checkbox" name="course" value="C">C
+        <input type="checkbox" name="course" value="C++">C++
+        <input type="checkbox" name="course" value="Java">Java
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" rows="4" cols="30" placeholder="Enter your comments here"></textarea>
+        <br><br>
+
+        <input type="button" value="Login">
+
+        <input type="button" value="Signup">
+        <br><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <br><br>
+
+        <input type="button" value="Click Me" onclick="alert('Button Clicked!')">
+        <br><br>
+    </form>
+</body>
+</html>
